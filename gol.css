@@ -1,0 +1,135 @@
+﻿body {
+    font-family: Segoe UI Light, Arial, monospace;
+    background-color: black;
+    color: white;
+}
+
+section#header {
+    overflow: auto;
+}
+
+#headerBlock {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#headerBlock p {
+    margin-bottom: 0;
+}
+#headerBlock h1 {
+    font-size: 36pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#controlBlock {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#controlBlock button {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.majorButton {
+    font-size: large;
+}
+
+#controlBlock button:disabled {
+    color: gray;
+    background-color: lightgray;
+}
+
+#btnStart {
+    background-color: green;
+    color: white;
+}
+
+#btnResume {
+    background-color: lightgreen;
+}
+
+#btnPause {
+    background-color: yellow;
+}
+
+#populationFlyout {
+    background-color:#333;
+    border:1px solid white;
+    position:absolute;
+    z-index:100;
+    display:none;
+    padding:5px;
+}
+
+    #populationFlyout p {
+        margin:auto;
+    }
+
+#infoBlock {
+	float:left;
+}
+
+#status {
+    font-size:larger;
+}
+
+.info {
+    font-size: smaller;
+    color: darkseagreen;
+}
+
+#playGroundSection {
+    float: left;
+    position: relative;
+}
+
+#toast {
+    visibility: hidden;
+    position: absolute;
+    top:30%;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+    border-radius: .2em;
+    font-size: larger;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-out;  /* Saf3.2+, Chrome */
+	-moz-transition: opacity 0.25s ease-out;  /* FF4+ */
+	-ms-transition: opacity 0.25s ease-out;  /* IE10? */
+	-o-transition: opacity 0.25s ease-out;  /* Opera 10.5+ */
+	transition: opacity 0.25s ease-out;
+}
+
+#toast .heading {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+#toast .detail {
+    color: black;
+}
+
+table#playground {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-spacing:1px;
+}
+
+td {
+    width: 8px;
+    height: 8px;
+    background-color: #222;
+}
+
+td.alive {
+    background-color: lightblue;
+}
